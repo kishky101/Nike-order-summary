@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+  <div id="home-page">
+    <main class="product">
+      <header class="product__header">
+        <h1>Order summary</h1>
+        <p>Check if your order matches</p>
+      </header>
+      <div class="product__catalogs">
+        <div class="product__catalog">
+          <div class="product__details">
+            <div class="product__image">
+              <img src="./assets/images/men-shoe.png" alt="men's shoe"/>
+            </div>
+            <div class="product__name">
+              <p>Nike Dunk Low Retro</p>
+              <span>Man's shoes</span>
+              <span>Size: 10</span>
+            </div>
+          </div>
+          <p class="product__price">$100.00</p>
+        </div>
+        <div class="product__catalog">
+          <div class="product__details">
+            <div class="product__image">
+              <img src="./assets/images/women-jacket.png" alt="women's jacket"/>
+            </div>
+            <div class="product__name">
+              <p>Nike Sportswear Therma-FIT City Series</p>
+              <span>Woman jacket</span>
+              <span>Size: L</span>
+            </div>
+          </div>
+          <p class="product__price">$170.00</p>
+        </div>
+      </div>
+      <hr />
+      <div class="product__footer">
+        <div class="product__summaries">
+          <div class="product__summary">
+            <p> <span>Product summary:</span> <span>$70.99</span> </p>
+            <p> <span>Cost of delivery:</span> <span>$0.00</span> </p>
+          </div>
+          <div class="product__total">
+            <p><span>Total:</span> <span>$70.99</span></p>
+          </div>
+        </div>
+        <div class="product__buttons">
+          <button>I confirm and pay</button>
+          <button>Cancel order</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <!-- <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script> -->
+</body>
+
+</html>

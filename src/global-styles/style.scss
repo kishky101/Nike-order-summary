@@ -1,0 +1,36 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "../product-styles/product.styles.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--grey-grade3);
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  color: var(--black-color);
+}
+
+p {
+  color: var(--color-on-surface);
+}
+
+#home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding-top: 143px;
+  padding-bottom: 143px;
+}
