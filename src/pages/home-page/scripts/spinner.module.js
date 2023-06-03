@@ -1,5 +1,4 @@
 const button = document.querySelector('#pay');
-//console.log(button);
 
 
 button.addEventListener('click', (e) => {
