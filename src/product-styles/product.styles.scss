@@ -34,9 +34,7 @@
     & &__catalog {
         display: flex;
         justify-content: space-between;
-        //gap: 1.8rem;
         position: relative;
-        //border: 1px solid red;
     }
 
     & &__image {
@@ -46,7 +44,6 @@
 
         img {
             height: auto;
-            //max-width: 100%;
             width: 7.4rem;
             height: 8rem;
             border-radius: .8rem;
@@ -67,7 +64,7 @@
             font-size: 1.4rem;
 
             &:first-of-type {
-                margin-bottom: .4rem;
+                margin-bottom: .6rem;
             }
         }
     }
