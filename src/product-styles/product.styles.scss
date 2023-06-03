@@ -155,6 +155,62 @@
                 &:focus {
                     background-color: var(--black-color);
                 }
+
+                &:has(span) {
+                    padding: 1.7rem;
+
+                    span {
+                        display: block;
+                        height: 2rem;
+                        width: 2rem;
+                        border: 3px  solid var(--grey-grade1);
+                        border-radius: 50%;
+                        position: relative;
+                        margin: 0 auto;
+                        animation: spin 2s ease-in-out 0s infinite forwards;
+                        //left: 1rem;
+
+                        &::after {
+                            content: '';
+                            height: 2rem;
+                            width: 2rem;
+                            position: absolute;
+                            border: 3px  solid var(--grey-grade2);
+                            border-radius: 50%;
+                            top: 0;
+                            left: -.4rem;
+                            top: -.4rem;
+                            opacity: .7;
+                            //left: 0;
+                        }
+                        &::before {
+                            content: '';
+                            height: 2rem;
+                            width: 2rem;
+                            position: absolute;
+                            border: 3px  solid var(--grey-grade3);
+                            border-radius: 50%;
+                            left: -.5rem;
+                            top: -.4rem;
+                            opacity: .5;
+                        }
+                    }
+
+                    @keyframes spin {
+                        0% {
+                            transform: rotateX(0deg) rotateY(30deg) translateZ(.1rem);
+                        }
+
+                        50% {
+                            transform: rotateX(180deg) rotateY(270deg);
+                        }
+
+                        100% {
+                            transform: rotateX(360deg) rotateY(360deg) translateZ(-1rem);
+                        }
+                        
+                    }
+                }
             }
 
             &:last-of-type {
